@@ -64,8 +64,9 @@ function updateMenuLayout() {
         // Set the styles for larger screens
         rRight.style.transition = "left 0.3s ease";
         rLeft.style.width = '200px';  
-        Menu.style.width = '1180px';
+        rRight.style.width = 'calc(100% - 200px)'
         rRight.style.left = '200px';
+        navBar.style.width = 'calc(100% - 200px)'
     }
 }
 function updateMenuLayoutClose() {
@@ -98,8 +99,9 @@ function updateMenuLayoutClose() {
     }
      else {
         rLeft.style.width = '80px';  
-        Menu.style.width = '1280px';
+        rRight.style.width = 'calc(100% - 80px)'
         rRight.style.left = '80px';
+        navBar.style.width = 'calc(100% - 80px)'
     }
 }
 

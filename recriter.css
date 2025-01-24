@@ -41,10 +41,11 @@ body{
     overflow-y: hidden;
 }
 .r-right-down{
-    background-color: #f4f5ff;
+    /* background-color: #f4f5ff; */
     /* min-height: 1200px; */
     height: auto;
     overflow-y: hidden;
+    
 }
 
 /*left side*/
