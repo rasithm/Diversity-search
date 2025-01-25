@@ -45,9 +45,9 @@ body {
     .company-div{
         display: flex;
         width: 100%;
-        background-color: brown; 
+        /* background-color: brown;  */
         justify-content: space-between;
-    
+        align-items: center;
         height: 80px;
         padding-top: 10px;
 
@@ -71,7 +71,7 @@ body {
     
 
     /* Focused input style (when user clicks/selects the input field) */
-    .company-input:focus ,.admin-input:focus ,.textarea-div textarea:focus {
+    .company-input:focus ,.company-input-last:focus ,.admin-input:focus ,.textarea-div textarea:focus {
         border: 1px solid #0066cc;  /* Blue border on focus */
         background-color: #fff;     /* White background when focused */
         box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3); /* Subtle blue shadow */
@@ -79,20 +79,20 @@ body {
     }
     
     /* Hover effect (when the user hovers over the input) */
-    .company-input:hover ,.admin-input:hover,.textarea-div textarea:hover {
+    .company-input:hover ,.company-input-last:hover,.admin-input:hover,.textarea-div textarea:hover {
         border: 1px solid #0066cc;  /* Change border color on hover */
         background-color: #e8f0fe;   /* Slightly darker background */
         box-shadow: 0 2px 8px rgba(0, 102, 204, 0.15); /* Light shadow on hover */
     }
     
     /* Active state style when typing (focused and typed into) */
-    .company-input:active ,.admin-input:active ,.textarea-div textarea:active {
+    .company-input:active,.company-input-last:active ,.admin-input:active ,.textarea-div textarea:active {
         border: 1px solid #005bb5;  /* Darker blue border when typing */
         box-shadow: 0 2px 8px rgba(0, 91, 181, 0.3); /* Darker shadow when typing */
     }
     
     /* Placeholder text customization */
-    .company-input::placeholder ,.admin-input::placeholder{
+    .company-input::placeholder ,.company-input-last::placeholder,.admin-input::placeholder{
         color: #999;  /* Light grey placeholder */
         font-style: italic;
         opacity: 0.7;  /* Slightly transparent */
@@ -118,7 +118,7 @@ body {
     }
     .admin-div{
         display: flex;
-        background-color: darksalmon;
+        /* background-color: darksalmon; */
         width: 100%;
         height: 100px;
         flex-wrap: wrap;
@@ -149,7 +149,7 @@ body {
     .admin-role{
         display: flex;
         width: 50%;
-        background-color: cornflowerblue;
+        /* background-color: cornflowerblue; */
         justify-content: space-between;
         padding-left: 20px;
         align-items: center;
@@ -161,7 +161,7 @@ body {
     }
     .email-div{
         display: flex;
-        background-color: darksalmon;
+        /* background-color: darksalmon; */
         width: 100%;
         height: 80px;
         flex-wrap: wrap;
@@ -169,7 +169,7 @@ body {
     .email-name{
         display: flex;
         width: 50%;
-        background-color: rgb(34, 110, 38);
+        /* background-color: rgb(34, 110, 38); */
         justify-content: space-between;
         align-items: center;
     }
@@ -180,7 +180,7 @@ body {
     .website{
         display: flex;
         width: 50%;
-        background-color: rgb(221, 100, 237);
+        /* background-color: rgb(221, 100, 237); */
         justify-content: space-between;
         padding-left: 20px;
         align-items: center; 
@@ -254,23 +254,8 @@ body {
     margin-left: 20px;
 }
 
-.about{
-    display: flex;
-    /* background-color: rgb(100, 154, 199); */
-    width: 100%;
-    min-height: 80px;
-    height: auto;
-    justify-content: space-between;
-}
-.about-p-div{
-    height: 80px;
-    display: flex;
-    align-items: center;
-    width: 20%;
-}
-.about-p-div p{
-    font-size: 20px;
-}
+
+
 
 .admin-input-sel{
     border-radius: 10px;
@@ -289,6 +274,24 @@ body {
     border: 3px solid #005bb5;  /* Darker blue border when typing */
     box-shadow: 0 2px 8px rgba(0, 91, 181, 0.3); 
 }
+
+.about{
+    display: flex;
+    /* background-color: rgb(100, 154, 199); */
+    width: 100%;
+    min-height: 80px;
+    height: auto;
+    justify-content: space-between;
+}
+.about-p-div{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.about-p-div p{
+    font-size: 20px;
+}
 .textarea-div textarea{
     width: 99%;
     margin: 5px;
@@ -305,7 +308,7 @@ body {
 }
 .textarea-div{
  width: 80%;
- background-color: bisque;
+ /* background-color: bisque; */
  display: flex;
  flex-direction: column;
  align-items: end;
@@ -339,6 +342,31 @@ body {
     border-radius: 5px;
 
 }
+.company-div-last{
+    display: flex;
+    width: 100%;
+    /* background-color: brown;  */
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-top: 10px;
+}
+.company-input-last{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #141B5F;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f0f4f8;  /* Light background color */
+    transition: all 0.3s ease;   /* Smooth transition for effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.company-div-last p{
+    font-size: 20px;
+    width: 20%;
+}
 
 .admin-name-last{
     display: flex;
@@ -362,4 +390,11 @@ body {
     transition: all 0.3s ease;   /* Smooth transition for effects */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
     
+}
+.admin-div-last{
+    display: flex;
+    /* background-color: darksalmon; */
+    width: 100%;
+    height: 100px;
+    flex-wrap: wrap;
 }

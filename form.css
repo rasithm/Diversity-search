@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .r-down-main{
     
@@ -28,7 +28,7 @@ body {
     right: 50px;
     
     height: auto;
-    width: 95%;
+    width: 96%;
     /* background-color: bisque; */
     background-color: #fff;
     border-radius: 10px;
