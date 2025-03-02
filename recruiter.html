@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="info.css">
     <link rel="stylesheet" href="response-info.css">
+    <link rel="stylesheet" href="diversity.css">
     <script defer src="info.js"></script>
     <script defer src="recriter1.js"></script>
     <title>Recruiter</title>
@@ -202,134 +203,126 @@
                 
 
                 <div class="r-right-down-main">
-                <div class="r-down-main">
-                    <div class="account-div">
-                        <p class="account">Create new job post</p>
+                    <div class="r-down-main">
+                        <main class="diversity-main">
+                            <section class="navigation-header">
+                                <div class="navigation-header-1">
+                                    <div class="navigation-header-1-1">
+                                        <p>Keyword Search</p>
+                                    </div>
+                                    <div class="navigation-header-1-2">
+                                        <p>Advance Search</p>
+                                    </div>
+                                </div>
+                                <div class="navigation-header-2">
+                                    <div class="navigation-header-input-div">
+                                        <input type="text" placeholder="Search"/>
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    
+                                </div>
+                            </section>
+                            <section class="diversity-body">
+                                <div class="search-cadidate">
+                                    <div class="search-cadidate-div">
+                                        <p>Search Cadidate</p>
+                                        <!-- <i class="fa-regular fa-circle-down"></i> -->
+                                        <i class="fa-solid fa-caret-right"></i>  
+                                        
+                                    </div>
+                                </div>
+                                <div class="search-cadidate-body">
+                                    <div class="search-cadidate-keyboard">
+                                        <p>Keywords</p>
+                                        <input type="text" />
+                                        
+
+                                        <div class="search-cadidate-mark">
+                                            <input type="checkbox" />
+                                            <p>Mark all keywords as mandatory</p>
+                                        </div>
+
+                                        <div class="search-cadidate-skill">
+                                            <div class="add-keywords">
+                                                <p >+</p>
+                                                <label>Add keyWords</label>
+                                            </div>
+                                            <div class="add-skill">
+                                                <p >+</p>
+                                                <label>Add Skill</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-cadidate-exprience">
+                                        <p>Exprience</p>
+                                        <div class="search-cadidate-exprience-1">
+                                            <div class="search-cadidate-exprience-1-1">
+                                                <input type="text"/>
+                                                <p>to</p>
+                                            </div>
+                                            <div class="search-cadidate-exprience-1-1">
+                                                <input type="text"/>
+                                                <p>years</p>
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="search-cadidate-exprience">
+                                        <p>Annual Salary</p>
+                                        <div class="search-cadidate-exprience-1">
+                                            <div class="search-cadidate-exprience-1-1">
+                                                <input type="text"/>
+                                                <p>to</p>
+                                            </div>
+                                            <div class="search-cadidate-exprience-1-1">
+                                                <input type="text"/>
+                                                <p>years</p>
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="search-cadidate-keyboard">
+                                        <p>Current Location of Candidate</p>
+                                        <input type="text" />
+                                        
+
+                                        <div class="search-cadidate-mark">
+                                            <input type="checkbox" />
+                                            <p>Include Candidate Who perfers to relocate to above Location</p>
+                                        </div>
+                                    </div>
+                                    <div class="search-cadidate-keyboard">
+                                        <p>Languages</p>
+                                        <input type="text" />
+                                        
+
+                                        <div class="search-cadidate-mark">
+                                            <input type="checkbox" />
+                                            <p>Mark all Languages mandatory</p>
+                                        </div>
+
+                                        <div class="search-cadidate-skill">
+                                            <div class="add-keywords">
+                                                <p >+</p>
+                                                <label>Tamil</label>
+                                            </div>
+                                            <div class="add-skill">
+                                                <p >+</p>
+                                                <label>English</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-cadidate-btn">
+                                        <button>Search Cadidate</button>
+                                        
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
                     </div>
-                    <div class="info-list">
-
-
-                        <div class="admin-div">
-                            <div class="admin-name">
-                                <p >Job Title <span>*</span></p>
-                                <input class="admin-input" placeholder="Enter Admin name" required/> 
-                            </div>
-                            <div class="admin-role">
-                                <p>Work Mode </p>
-                                <input class="admin-input" placeholder="onsite / remote / hybrid" required/>
-                            </div>
-        
-                        </div>
-
-
-                        <div class="company-div">
-                            <p >Job Location <span>*</span></p>
-                            <input class="company-input" placeholder="Chennai-Tamil Nadu, Bengaluru-Karnataka" required/>
-                        </div>
-
-
-                        <div class="email-div">
-                            <div class="email-name">
-                                <p >Job type <span>*</span></p>
-                                <select class="admin-input-sel">
-                                    <option>Full-time / Part-time</option>
-                                    <option>Java Programming</option>
-                                    <option>Python</option>
-                                    <option>Data Analyst</option>
-                                </select> 
-                            </div>
-                            <div class="website">
-                                <p>Shift <span>*</span></p>
-                                <select class="admin-input-sel">
-                                    <option>Fixed (day or night)</option>
-                                    <option >Java Programming</option>
-                                    <option >Python</option>
-                                    <option >Data Analyst</option>
-                                </select>
-                            </div>
-        
-        
-                        </div>
-
-                        <div class="company-div">
-                            <p >Qualifications <span>*</span></p>
-                            <input class="company-input" placeholder="Any CS / BE in Cse" required/>
-                        </div>
-
-                        <div class="admin-div">
-                            <div class="admin-name">
-                                <p >Exprience <span>*</span></p>
-                                <input class="admin-input" placeholder="Enter Admin name" required/> 
-                            </div>
-                            <div class="admin-role">
-                                <p>To </p>
-                                <input class="admin-input" placeholder="onsite / remote / hybrid" required/>
-                            </div>
-        
-                        </div>
-
-
-                        <div class="email-div">
-                            <div class="email-name">
-                                <p >Salary <span>*</span></p>
-                                <select class="admin-input-sel">
-                                    <option>3 LPA</option>
-                                    <option>Java Programming</option>
-                                    <option>Python</option>
-                                    <option>Data Analyst</option>
-                                </select> 
-                            </div>
-                            <div class="website">
-                                <p>Openin Count <span>*</span></p>
-                                <select class="admin-input-sel">
-                                    <option>20</option>
-                                    <option >Java Programming</option>
-                                    <option >Python</option>
-                                    <option >Data Analyst</option>
-                                </select>
-                            </div>
-        
-        
-                        </div>
-
-
-
-                        <div class="about">
-                            <div class="about-p-div">
-                                <p>Job Description <span>*</span></p>
-                            </div>
-                            <div class="textarea-div">
-                                <textarea placeholder="short Description" id="book-description-input"></textarea>
-                                <p id="char-count">0/500 chart</p>
-                            </div>
-
-                        </div>
-
-
-
-
-                        <div class="company-div-last">
-                            <p >Employee benifits <span>*</span></p>
-                            <input class="company-input-last" placeholder="" required/>
-                        </div>
-
-                        <div class="admin-div-last">
-                            <div class="admin-name-last">
-                                <p >Last date to apply <span>*</span></p>
-                                <input class="admin-input-last" placeholder="Enter Admin name" required/> 
-                            </div>
-                            
-        
-                        </div>
-
-                        <div class="btn-div">
-                            <button class="btn" >Create Account</button>
-                        </div>
-
-
-
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
