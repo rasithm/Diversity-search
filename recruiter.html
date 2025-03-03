@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="info.css">
     <link rel="stylesheet" href="response-info.css">
     <link rel="stylesheet" href="diversity.css">
-    <script defer src="info.js"></script>
+    <link rel="stylesheet" href="advanceSearch.css">
+    <script defer src="advanceSearch.js"></script>
     <script defer src="recriter1.js"></script>
     <title>Recruiter</title>
 </head>
@@ -234,24 +235,33 @@
                                 <div class="search-cadidate-body">
                                     <div class="search-cadidate-keyboard">
                                         <p>Keywords</p>
-                                        <input type="text" />
+                                        
+                                        <div class="search-container">
+                                            <input type="text" id="skill-input" placeholder="Type a skills">
+                                            <div id="suggestion-box" class="suggestion-box"></div>
+                                            <div id="selected-skills" class="selected-skills"></div>
+                                        </div>
+
                                         
 
                                         <div class="search-cadidate-mark">
                                             <input type="checkbox" />
                                             <p>Mark all keywords as mandatory</p>
                                         </div>
-
-                                        <div class="search-cadidate-skill">
+                                        
+                                        <!-- <div class="search-cadidate-skill">
                                             <div class="add-keywords">
-                                                <p >+</p>
-                                                <label>Add keyWords</label>
+                                                
+                                                    <p >+</p>
+                                                    <label>Add keyWords</label>
+                                                
                                             </div>
+                                            <div class="shows-skills" id="selected-skills"></div>
                                             <div class="add-skill">
                                                 <p >+</p>
                                                 <label>Add Skill</label>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="search-cadidate-exprience">
                                         <p>Exprience</p>
@@ -296,7 +306,12 @@
                                     </div>
                                     <div class="search-cadidate-keyboard">
                                         <p>Languages</p>
-                                        <input type="text" />
+                                        
+                                        <div class="search-container">
+                                            <input type="text" id="language-input" placeholder="Type a Languages">
+                                            <div id="suggestion-language" class="suggestion-box"></div>
+                                            <div id="selected-language" class="selected-skills"></div>
+                                        </div>
                                         
 
                                         <div class="search-cadidate-mark">
@@ -304,7 +319,7 @@
                                             <p>Mark all Languages mandatory</p>
                                         </div>
 
-                                        <div class="search-cadidate-skill">
+                                        <!-- <div class="search-cadidate-skill">
                                             <div class="add-keywords">
                                                 <p >+</p>
                                                 <label>Tamil</label>
@@ -313,7 +328,7 @@
                                                 <p >+</p>
                                                 <label>English</label>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="search-cadidate-btn">
                                         <button>Search Cadidate</button>
