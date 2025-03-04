@@ -45,3 +45,16 @@ openBoxDiversity.addEventListener('click', () => {
     }
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const candidates = document.querySelectorAll(".select-candidate");
+
+    candidates.forEach(candidate => {
+        candidate.addEventListener("click", function () {
+            // Remove active class from all candidates
+            candidates.forEach(c => c.classList.remove("active"));
+            // Add active class to the clicked one
+            this.classList.add("active");
+        });
+    });
+});
