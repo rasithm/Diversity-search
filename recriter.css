@@ -11,10 +11,11 @@ body{
       overflow-x: hidden;
 }
 .parent{
-    display: flex;
-    min-height: 1500px;
+    min-height: 700px;
     height: auto;
-    background-color: #f4f5ff;
+    display: flex;
+    
+    /* background-color: #f4f5ff; */
     /* background-color: rgb(167, 35, 35); */
 }
 .r-left{
@@ -30,7 +31,7 @@ body{
 }
 .r-right{
     /* background-color: blanchedalmond; */
-    min-height: 1300px;
+    min-height: 1100px;
     height: auto;
     transition: width 0.3s ease;
     width: 100%;
