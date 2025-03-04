@@ -77,7 +77,8 @@
     display: flex;
     align-items: center;
     padding-left: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
+    
     border: none;
     padding-top: 2px;
 }
@@ -162,10 +163,12 @@
     margin-bottom: 10px;
 }
 .search-cadidate-keyboard input{
-    height: 30px;
-    border-radius: 5px;
+    height: 40px;
+    border-radius: 10px;
     border: 0.5px solid #999999;
-
+    transition: all 0.3s ease;   /* Smooth transition for effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    
 }
 .search-cadidate-mark{
     display: flex;
@@ -247,18 +250,15 @@
     min-height: 40px;
     height: auto;
     margin-right: 20px;
+    gap: 10px;
 }
 .search-cadidate-exprience-1-1 input{
-    height: 35px;
+    height: 40px;
     width: 80%;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 0.5px solid  #999999;
 }
-.search-cadidate-exprience-1-1  p{
-    font-size: 18px;
-    color: #555555;
 
-}
 
 .employement-candidate{
     width: 100%;
@@ -296,6 +296,57 @@
     height: 200px;
     background-color: aqua;
     display: none;
+}
+
+.select{
+    border: none;
+    font-size: 16px;
+    color: #555555;
+    
+}
+
+.search-cadidate-exprience-1-1-input{
+    height: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.search-cadidate-exprience-1-1-input p{
+    width: 20%;
+    font-size: 17px;
+    margin-left: 14px;
+    margin-top: 5px;
+    border-right: 0.5px solid black;
+}
+.search-cadidate-exprience-1-1-input input{
+    height: 38px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border: none;
+    padding-top: 2px;
+}
+.search-cadidate-exprience-1-1-input input:focus{
+    border: none; /* Removes border */
+    outline: none; /* Removes outline */
+    background-color: white; /* Keeps background */
+}
+.admin-input{
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0.5px solid #999999;
+    padding-left: 10px;
+    /*background-color: #f0f4f8;  */
+    /* Light background color */
+    transition: all 0.3s ease;   /* Smooth transition for effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
 }
 
 
