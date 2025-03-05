@@ -1,6 +1,6 @@
 @media (min-width: 376px) and (max-width:425px){
     .r-right{
-        left:60px;
+        margin-left:60px;
         width: calc(100% - 60px);
         z-index: 1;   
     }

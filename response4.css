@@ -3,7 +3,7 @@
         overflow-x: hidden;
     }
     .r-right{
-        left:200px;
+        margin-left:200px;
         /* changes----------------------------- */
         /* min-width: 1287px; */
         width: calc(100% - 200px);
@@ -165,7 +165,7 @@
         overflow-x: hidden;
     }
     .r-right{
-        left:200px;
+        margin-left:200px;
         /* changes----------------------- */
         /* min-width: 1287px; */
         width: calc(100% - 200px);
@@ -347,7 +347,7 @@
         overflow-x: hidden;
     }
     .r-right{
-        left:200px;
+        margin-left:200px;
         /* changes---------------------- */
         /* min-width: 1287px; */
         width: calc(100% - 200px);

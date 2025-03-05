@@ -35,8 +35,9 @@ body{
     height: auto;
     transition: width 0.3s ease;
     width: 100%;
-    position: absolute;
-    left: 200px;
+    /* position: absolute;
+    left: 200px; */
+    margin-left: 200px;
     /* changes-------------------------------- */
     overflow-x: hidden;
     overflow-y: hidden;

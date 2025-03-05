@@ -46,7 +46,7 @@ function updateMenuLayout() {
     }else if(window.innerWidth >= 769 && window.innerWidth <= 1340){
         rLeft.style.width = '200px';  
         rRight.style.width = 'calc(100% - 200px)'
-        rRight.style.left = '200px';
+        rRight.style.marginLeft = '200px';
         // navBar.style.transition = "left 0.3s ease";
         navBar.style.width = 'calc(100% - 200px)' 
         // rRight.style.transition = "left 0.3s ease";
@@ -55,7 +55,7 @@ function updateMenuLayout() {
         
         rLeft.style.width = '200px';  
         rRight.style.width = 'calc(100% - 200px)'
-        rRight.style.left = '200px';
+        rRight.style.marginLeft = '200px';
         // navBar.style.transition = "left 0.3s ease";
         navBar.style.width = 'calc(100% - 200px)' 
         // rRight.style.transition = "left 0.3s ease";
@@ -65,7 +65,7 @@ function updateMenuLayout() {
         rRight.style.transition = "left 0.3s ease";
         rLeft.style.width = '200px';  
         rRight.style.width = 'calc(100% - 200px)'
-        rRight.style.left = '200px';
+        rRight.style.marginLeft = '200px';
         navBar.style.width = 'calc(100% - 200px)'
     }
 }
@@ -73,34 +73,34 @@ function updateMenuLayoutClose() {
     if(window.innerWidth <= 320) {
         rLeft.style.width = '60px';
         // Menu.style.width = '260px';
-        rRight.style.left = '60px';
+        rRight.style.marginLeft = '60px';
     }else if(window.innerWidth >= 321 && window.innerWidth <= 375){
         rLeft.style.width = '60px';
         // Menu.style.width = '260px';
-        rRight.style.left = '60px';
+        rRight.style.marginLeft = '60px';
     }else if(window.innerWidth >= 375 && window.innerWidth <= 425){
         rLeft.style.width = '60px';
         // Menu.style.width = '260px';
-        rRight.style.left = '60px';
+        rRight.style.marginLeft = '60px';
     }else if(window.innerWidth >= 425 && window.innerWidth <= 775){
         rLeft.style.width = '60px';
         // Menu.style.width = '260px';
-        rRight.style.left = '60px';
+        rRight.style.marginLeft = '60px';
     }else if(window.innerWidth >= 1367){
         rLeft.style.width = '80px';  
         rRight.style.width = 'calc(100% - 80px)'
-        rRight.style.left = '80px';
+        rRight.style.marginLeft = '80px';
         navBar.style.width = 'calc(100% - 80px)'
     }else if(window.innerWidth >= 769 && window.innerWidth <= 1340){
         rLeft.style.width = '80px';  
         rRight.style.width = 'calc(100% - 80px)'
-        rRight.style.left = '80px';
+        rRight.style.marginLeft = '80px';
         navBar.style.width = 'calc(100% - 80px)'
     }
      else {
         rLeft.style.width = '80px';  
         rRight.style.width = 'calc(100% - 80px)'
-        rRight.style.left = '80px';
+        rRight.style.marginLeft = '80px';
         navBar.style.width = 'calc(100% - 80px)'
     }
 }
@@ -114,7 +114,7 @@ openMenu.addEventListener('click', function() {
     BoxHide.forEach(item => item.style.display = 'none');
     
 
-    rRight.style.position = 'relative';
+    // rRight.style.position = 'relative';
     updateMenuLayout(); 
     //  // Update layout based on screen width
     
@@ -128,7 +128,7 @@ closeMenu.addEventListener('click', function() {
     Box1.forEach(item => item.style.display = 'none');
     BoxHide.forEach(item => item.style.display = 'flex');
     
-    rRight.style.position = 'relative';
+    // rRight.style.position = 'relative';
 
     updateMenuLayoutClose();
 });
