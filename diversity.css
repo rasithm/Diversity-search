@@ -67,7 +67,8 @@
     width: 50%;
     display: flex;
     align-items: center;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: #141B5F;
     border-radius: 8px;
     border: 1px solid black;
 }
@@ -397,4 +398,164 @@
     border-radius: 8px;
     background-color: #FFBD03;
     border: 0.5px solid black;
+}
+
+
+
+@media (min-width : 850px) and (max-width : 1200px) {
+    .navigation-header-1-1{
+        width: 50%;
+        
+    }
+    .navigation-header-1-2{
+        width: 50%;
+        
+    }
+
+    .navigation-header-2 .navigation-header-input-div{
+
+        width: 70%;
+        
+    }
+    .navigation-header-input-div input{
+        
+        width: 83%;
+        
+    }
+    .search-cadidate-exprience-1-1-input p{
+        width: 30%;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 15px;
+    
+    }
+
+}
+
+@media (min-width : 550px) and (max-width : 849px) {
+    .navigation-header-1-1{
+        width: 50%;
+        padding-left: 5px;
+    }
+    .navigation-header-1-1 p{
+        font-size: 13px;
+        
+    }
+    .navigation-header-1-2{
+        width: 50%;
+        padding-left: 5px;
+    }
+    .navigation-header-1-2 p{
+        font-size: 13px;
+        
+    }
+
+    .navigation-header-2 .navigation-header-input-div{
+
+        width: 70%;
+        
+    }
+    .navigation-header-input-div input{
+        
+        width: 83%;
+        
+    }
+
+    .search-cadidate-exprience-1-1{
+        width: 40%;
+        
+        /* background-color: bisque; */
+    }
+    .search-cadidate-exprience-1-1-input p{
+        width: 30%;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 15px;
+    
+    }
+
+}
+
+@media (min-width : 550px) and (max-width : 650px){
+    .select-candidate{
+        font-size: 13px;
+    }
+} 
+
+
+
+@media (min-width : 400px) and (max-width : 550px){
+    .navigation-header-1{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background-color: #141B5F;
+        padding-left: 5px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .navigation-header-2{
+        width: 50%;
+        height: auto;
+        display: flex;
+        /* background-color: rgb(243, 75, 133); */
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding-right: 5px;
+    }
+    .navigation-header-2 .navigation-header-input-div{
+        
+        width: 100%;
+        background-color: #555555;
+       
+    }
+    .navigation-header-input-div input{
+        
+        width: 100%;
+        
+        
+    }
+    .navigation-header-1-1{
+        width: 100%;
+        padding-left: 5px;
+    }
+    .navigation-header-1-1 p{
+        font-size: 13px;
+        
+    }
+    .navigation-header-1-2{
+        width: 100%;
+        padding-left: 5px;
+    }
+    .navigation-header-1-2 p{
+        font-size: 13px;
+        
+    }
+
+    .navigation-header-2 .navigation-header-input-div{
+
+        width: 70%;
+        
+    }
+    .navigation-header-input-div input{
+        
+        width: 83%;
+        
+    }
+
+    .search-cadidate-exprience-1-1{
+        width: 40%;
+        
+        /* background-color: bisque; */
+    }
+    .search-cadidate-exprience-1-1-input p{
+        width: 30%;
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 15px;
+    
+    }
 }
